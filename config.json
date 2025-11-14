@@ -1,0 +1,27 @@
+{
+  "music_directory": "playlist",
+  "log_file": "logs/app.log",
+  "schedules": [
+    {
+      "label": "Morning Recess",
+      "start_time": "09:30",
+      "duration_minutes": 15,
+      "shutdown_after": true
+    },
+    {
+      "label": "Afternoon Recess",
+      "start_time": "15:00",
+      "duration_minutes": 10,
+      "shutdown_after": true
+    }
+  ],
+  "web": {
+    "enabled": true,
+    "host": "0.0.0.0",
+    "port": 5000
+  },
+  "shutdown_command": "sudo shutdown now",
+  "youtube": {
+    "audio_format": "mp3"
+  }
+}
